@@ -17,8 +17,8 @@
         android:layout_height="wrap_content"
         android:hint="이메일 양식으로 입력"
         android:inputType="textEmailAddress"
-        />
-    <EditText
+        tools:ignore="TouchTargetSizeCheck" />
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="비밀번호" />
@@ -27,7 +27,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="8글자 이상 입력"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -38,8 +39,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="한 줄로 입력"
+        android:imeOptions="actionGo"
         android:singleLine="true"
-        android:imeOptions="actionGo"/>
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
 
 
