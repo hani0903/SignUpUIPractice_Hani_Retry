@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity"
     android:padding="20dp"
-    android:background="#333333">
+    android:background="#FFFFFF">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
         <ImageView
             android:layout_width="352dp"
             android:layout_height="200dp"
-            android:scaleType="fitcenter"
+            android:scaleType="fitCenter"
             android:src="@drawable/img" />
 
 
@@ -90,14 +90,31 @@
             android:enabled="false"
             android:text="공개 안함" />
 
-
-
     </RadioGroup>
 
-    <Button
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="확인" />
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="확인" />
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="취소" />
+
+    </LinearLayout>
 
 
 
